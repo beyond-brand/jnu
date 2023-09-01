@@ -239,6 +239,7 @@ table {
 html,body{
 	margin:0;
 	padding:0;
+  overflow-x: hidden;
 }
 table {
 	border-collapse:collapse;
@@ -385,7 +386,7 @@ video {
 }
 .portfolio-bg {
   overflow:hidden;
-  height: 60vh;
+  height: 40vh;
   background-color: #000;
   background-blend-mode: overlay;
 }
@@ -403,13 +404,13 @@ video {
   top: 0;
   left:0;
   color: #f4f4f4;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.3em;
   font-weight: 100;
 }
 .contact-bg {
   overflow:hidden;
-  height: 60vh;
+  height: 40vh;
   background-color: #000;
   background-blend-mode: overlay;
 }
@@ -427,7 +428,7 @@ video {
   top: 0;
   left:0;
   color: #f4f4f4;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.3em;
   font-weight: 100;
 }
@@ -442,7 +443,28 @@ video {
   justify-content: center;
   align-items: center;
 }
+.lightbox1, .lightbox2 {
+  background-color: #000;
+  display: block;
+  position: relative;
+}
+.lightbox1>p, .lightbox2>p {
+  color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  font-size: 20px;
+}
+.lightbox1:nth-child(2n-1)>p {
 
+}
+.lightbox1:nth-child(2n-1)>img, .lightbox2:nth-child(2n-1)>img{
+  opacity: 0.1;
+}
+.lightbox1:hover>img, .lightbox2:hover>img {
+  opacity: 1;
+}
 /* Home-portfolio
 =====================================================*/
 .port {
@@ -468,10 +490,10 @@ video {
   align-items: center;
   overflow: hidden;
   background-color: #000;
+  height: 300px;
 }
 .port-box img {
   width: 100%;
-  height: auto;
   -webkit-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -520,8 +542,8 @@ video {
 }
 
 .portfolio-cont .portfolio-img-box a {
-  flex-basis: 45%;
-  height: 500px;
+  flex-basis: 22%;
+  height: 250px;
   overflow: hidden;
 }
 .portfolio-cont .portfolio-img-box a img {
@@ -1147,6 +1169,84 @@ support for no js
 	.dark-black-60.tp-resp-24 {
 		top:47%!important;
 	}
+  .port {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-service-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .home-contact-box .cis-cont{
+    padding: 0;
+    margin-bottom: 20px;
+    justify-content: left;
+    gap: 20px;
+  }
+  .home-contact>.container>.row {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-contact .section-title {
+    border: none;
+  }
+  .team-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-box .fes2-img img{
+    height: 100%;
+  }
+  .team-box .fes2-main-text-cont {
+    width: 265px;
+  }
+  .about-bg .about-logo {
+    height: auto !important;
+  }
+  .about-bg h1 {
+    margin: 0;
+  }
+  .about-bg-img {
+    height: 100%;
+  } 
+  .about-feature .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .we-believe {
+    margin-top: 100px !important;
+  }
+  .portfolio-cont .portfolio-img-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-bg, .contact-bg {
+    height: 25vh;
+  }
+  .portfolio-bg h1, .contact-bg h1 {
+    font-size: 30px;
+  }
+  .about-bg, .home-bg, .header-transporent-bg-black {
+    height: 50vh !important;
+    overflow: hidden;
+  }
+  #mainvideo {
+    min-height: 50vh;
+  }
+  .opacity-scroll2 {
+    margin-top: 50%;
+  }
+  .opacity-scroll2 .cd-headline {
+    margin-bottom: 20px;
+  }
+  .opacity-scroll2 .cd-headline span {
+    font-size: 30px;
+  }
+  .contact-us-container>.container>.row{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width : 736px){ 
