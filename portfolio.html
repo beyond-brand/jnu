@@ -25,6 +25,8 @@
 		<link rel="stylesheet" href="css/style.css" >
 		<link rel='stylesheet' href="css/animate.min.css">
     <link rel="stylesheet" href="touchTouch/touchTouch.css">
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- IE Warning CSS -->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
@@ -42,6 +44,8 @@
     <!-- Modernizr -->
     <!-- <script src="js/modernizr.js"></script> -->
     <script src="touchTouch/touchTouch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+
 
 	</head>
 	<body>
@@ -163,6 +167,7 @@
        
         <!-- COTENT CONTAINER -->
         <div class="grey-bg portfolio-container" style="background-color: #f4f4f4;">
+          
           <div class="container">
             <div class="row portfolio-title">
               <div class="col-md-12">
@@ -171,20 +176,57 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="container slider-container">
 
             <div class="row portfolio-cont">
-              <div id="portBox1" class="portfolio-img-box">
-                <a href="images/portfolio/wonder1.jpg" class="lightbox1"><p class="section-title">BEFORE</p><img src="images/portfolio/wonder_bf/1.jpg"></a>
-                <a href="images/portfolio/wonder2.jpg" class="lightbox1"><img src="images/portfolio/wonder_af/5.jpg"></a>
-                <a href="images/portfolio/wonder3.jpg" class="lightbox1"><p class="section-title">BEFORE</p><img src="images/portfolio/wonder_bf/2.jpg"></a>
-                <a href="images/portfolio/wonder4.jpg" class="lightbox1"><img src="images/portfolio/wonder_af/8.jpg"></a>
-                <a href="images/portfolio/wonder5.jpg" class="lightbox1"><p class="section-title">BEFORE</p><img src="images/portfolio/wonder_bf/3.jpg"></a>
-                <a href="images/portfolio/wonder1.jpg" class="lightbox1"><img src="images/portfolio/wonder_af/6.jpg"></a>
-                <a href="images/portfolio/wonder5.jpg" class="lightbox1"><p class="section-title">BEFORE</p><img src="images/portfolio/wonder_bf/4.jpg"></a>
-                <a href="images/portfolio/wonder1.jpg" class="lightbox1"><img src="images/portfolio/wonder_af/1.jpg"></a>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/before.png"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/1.jpg"></div>
+                  
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/2.jpg"></div>
+                  
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/3.jpg"></div>
+                  
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/4.jpg"></div>
+                  
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/5.jpg"></div>
+                  
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_bf/6.jpg"></div>
+                  
+                  
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
+            <div class="row portfolio-cont">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/after.png"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/1.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/2.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/3.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/4.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/5.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/6.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/7.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/wonder_af/8.jpg"></div>
+                </div>
 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="container">
             <div class="row portfolio-title">
               <div class="col-md-12">
                 <div class="mb-40">
@@ -192,21 +234,48 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="container slider-container">
 
             <div class="row portfolio-cont">
-              <div id="portBox2" class="portfolio-img-box">
-                <a href="images/portfolio/shoe1.jpg" class="lightbox2"><p class="section-title">BEFORE</p><img src="images/portfolio/shoe_bf/1.jpg"></a>
-                <a href="images/portfolio/shoe2.jpg" class="lightbox2"><img src="images/portfolio/shoe_af/1.jpg"></a>
-                <a href="images/portfolio/shoe3.jpg" class="lightbox2"><p class="section-title">BEFORE</p><img src="images/portfolio/shoe_bf/2.jpg"></a>
-                <a href="images/portfolio/shoe4.jpg" class="lightbox2"><img src="images/portfolio/shoe_af/3.jpg"></a>
-                <a href="images/portfolio/shoe5.jpg" class="lightbox2"><p class="section-title">BEFORE</p><img src="images/portfolio/shoe_bf/4.jpg"></a>
-                <a href="images/portfolio/shoe1.jpg" class="lightbox2"><img src="images/portfolio/shoe_af/4.jpg"></a>
-                <a href="images/portfolio/shoe5.jpg" class="lightbox2"><p class="section-title">BEFORE</p><img src="images/portfolio/shoe_bf/6.jpg"></a>
-                <a href="images/portfolio/shoe1.jpg" class="lightbox2"><img src="images/portfolio/shoe_af/5.jpg"></a>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/before.png"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/1.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/2.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/3.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/4.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/5.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_bf/6.jpg"></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>  
-        </div>
+            <div class="row portfolio-cont">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/after.png"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/1.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/2.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/3.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/4.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/5.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/6.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/7.jpg"></div>
+                  <div class="swiper-slide"><img src="images/portfolio/shoe_af/8.jpg"></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            
+          </div>
 	    
         <!-- Work together button  -->
         <div class="port-view-more-cont-dark mt-150">
@@ -238,6 +307,7 @@
               <div class="cis-text">
                 <h3><span class="bold">EMAIL</span></h3>
                 <p><a href="mailto:jlee@jnuinterior.com">JLEE@JNUINTERIOR.COM</a></p>
+                <p><a href="mailto:jlee@jnuinterior.com">APARK@JNUINTERIOR.COM</a></p>
               </div>
               </div>
             </div>
@@ -284,7 +354,7 @@
               <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
         </p>
         
-	</div><!-- End BG -->	
+	    </div><!-- End BG -->	
     </div><!-- End wrap -->	
 			
 <!-- JS begin -->
@@ -334,8 +404,19 @@
 		<script src="js/main.js"></script>
 
     <script>
-      touchTouch(document.getElementById('portBox1').querySelectorAll('.lightbox1'), {});
-      touchTouch(document.getElementById('portBox2').querySelectorAll('.lightbox2'), {});
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 <!-- JS end -->	
 	
