@@ -217,7 +217,7 @@ if it's not present, don't show loader */
 /* #CSS RESET
  ===================================================================*/
 
- html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td {
 margin: 0;
 padding: 0;
 border: 0;
@@ -529,33 +529,48 @@ video {
 }
 /* Page- portfolio
 =====================================================*/
+.slider-container {
+  display: flex;
+  gap: 20px;
+}
 .portfolio-title {
   margin-top: 150px;
 }
-.portfolio-cont .portfolio-img-box {
+.portfolio-cont {
+  width: 100%;
+  height: 550px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
-.portfolio-cont .portfolio-img-box a {
-  flex-basis: 22%;
-  height: 250px;
-  overflow: hidden;
+.swiper-slide {
+  width: 100% !important;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio-cont .portfolio-img-box a img {
+
+.swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
-.portfolio-cont .portfolio-img-box a img:hover {
-  scale: 1.1;
+
+.swiper-pagination {
+  --swiper-pagination-color: #e6bd7b !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  --swiper-navigation-color: #e6bd7b !important;
+}
+.mobile-slide {
+
 }
 /* #SEARCH NEW
 ================================================== */
@@ -1130,7 +1145,36 @@ support for no js
 
 
 /*==========  Mobile  ==========*/
+@media only screen and (max-width : 383px) and (min-width : 280px) {
+  .local-scroll-cont {
+    visibility: hidden;
+  }  
+  .contactinfo .cis-text{
+      width: 60%;
+      height: auto;
+    }
+    .contactinfo .cis-icon {
+      width: 40%;
+    }
+    #service .main-intro p {
+      font-size: 15px !important;
+      padding: 0 20px;
+    }
+    #service .main-intro p b {
+      font-size: 20px !important;
+      display: block;
+      margin-bottom: 15px;
+      border-left: 3px solid #e6bd7b;
+      padding: 0 7px !important;
+    }
+    .home-bg .opacity-scroll2 {
+      margin-top: 100px;
+    }
+}
 @media only screen and (max-width : 478px) {
+  .local-scroll-cont {
+    visibility: hidden;
+  }  
 	.slider-bg-white-cap {
 		display:block;
 		visibility:visible;
@@ -1246,6 +1290,79 @@ support for no js
     margin-top: 0;
     display: flex;
     flex-direction: column-reverse;
+  }
+  #service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #service .row>.col-sm-6 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  #service .row .post-prev-img {
+    width: 160px !important;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+  #service .row .post-prev-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  #service .row .post-prev-title {
+    border-left: 3px solid #e6bd7b;
+    padding: 5px 10px;
+    width: 50% !important;
+  }
+  #service .row .post-prev-title h3 {
+    text-align: left;
+  }
+  #service .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #service .main-intro p {
+    font-size: 17px;
+    padding: 0 20px;
+    line-height: 30px;
+  }
+  #service .main-intro p b {
+    font-size: 23px;
+    display: block;
+    margin-bottom: 15px;
+    border-left: 3px solid #e6bd7b;
+    padding: 10px 0;
+  }
+  .slider-container {
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-cont {
+    width: 100%;
+    height: 250px;
+  }
+  .swiper-slide {
+    width: auto !important;
+    padding: 0 !important;
+  }
+  .swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center !important;
   }
 }
 
